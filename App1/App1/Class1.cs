@@ -15,6 +15,6 @@ namespace App1
         public const FontAttributes Emphasis = FontAttributes.Italic;
         public const FontAttributes TitleAttribute = FontAttributes.Bold;
         public const TextAlignment TitleAlignment = TextAlignment.Center;
-
+            
     }
 }
