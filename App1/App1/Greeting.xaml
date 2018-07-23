@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:App1"
+             Padding="5, 0"
+             x:Class="App1.Greeting">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <x:String x:Key="currentDateTime">Not actually a DateTime</x:String>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <StackLayout>
+        <Label Text="StaticResource on Label.Text:" 
+           VerticalOptions="EndAndExpand" FontSize="Medium" />
+
+        <!--StaticResource-->
+        <Label Text="{StaticResource currentDateTime}" 
+           VerticalOptions="StartAndExpand" 
+           HorizontalTextAlignment="Center"
+           FontSize="Medium" />
+
+        <Label Text="DynamicResource on Label.Text:" 
+           VerticalOptions="EndAndExpand" 
+           FontSize="Medium" />
+
+        <!--DynamicResource-->
+        <Label Text="{DynamicResource currentDateTime}" 
+           VerticalOptions="StartAndExpand" 
+           HorizontalTextAlignment="Center"
+           FontSize="Medium" />
+
+    </StackLayout>
+</ContentPage>

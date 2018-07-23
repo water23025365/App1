@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:App1"
+             x:Class="App1.MainPage"
+             BackgroundColor="{x:Static local:Class1.LightBackground}">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <LayoutOptions x:Key="horzOptions">Center</LayoutOptions>
+            <x:String x:Key="fontSize">Large</x:String>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    <StackLayout>
+        <!-- Place new controls here -->
+    	<Label Text="Welcome to Xamarin.Forms!" 
+           HorizontalOptions="Center"
+           VerticalOptions="CenterAndExpand" />
+        <Label Text="Just some text" 
+       BackgroundColor="{x:Static Color.Accent}" 
+       TextColor="{x:Static Color.Black}" 
+       FontAttributes="{x:Static FontAttributes.Italic}"
+       VerticalOptions="{x:Static LayoutOptions.Center}" 
+       HorizontalTextAlignment="{x:Static TextAlignment.Center}" />
+        <Label FontSize="{StaticResource fontSize}" Text="CCCCC" />
+    </StackLayout>
+
+</ContentPage>
