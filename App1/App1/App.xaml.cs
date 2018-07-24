@@ -11,7 +11,7 @@ namespace App1
 		{
 			InitializeComponent();
 
-			MainPage = new Greeting();
+			MainPage = new VisualElement();
 		}
 
 		protected override void OnStart ()
